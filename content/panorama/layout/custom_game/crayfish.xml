@@ -21,7 +21,7 @@
         </Panel>
         
 
-        <Panel id="CrayfishCredits">
+        <Panel id="CrayfishCredits" class="Invisible">
             <Label html="true" text="Created by Snoresville" />
             <Button class="ButtonClass" onactivate="NavigateMenu(0)">
                 <Label text="Back to Main Menu" />

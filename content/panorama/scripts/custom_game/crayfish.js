@@ -1,3 +1,13 @@
+// Debug
+const debug = false;
+if (!debug) {
+    $("#CrayfishMenu").SetHasClass("Invisible", false);
+    $("#CrayfishGame").SetHasClass("Invisible", true);
+} else {
+    $("#CrayfishMenu").SetHasClass("Invisible", true);
+    $("#CrayfishGame").SetHasClass("Invisible", false);
+}
+
 // Game Constants
 const maxPots = 50;
 const crayfishPrice = 10;
@@ -123,7 +133,7 @@ function RollResult(value) {
 
     FullUpdate();
 
-    WriteHistoryLine(`---[ Day ${currentDay} ]---`);
+    WriteHistoryLine(`---[ Day ${currentDay} (${value}) ]---`);
     if (lostPots > 0) WriteHistoryLine(`Lost ${lostPots} pots...`);
     WriteHistoryLine(
         `Got ${crayfish} Crayfish! (+$${crayfish * crayfishPrice})`
