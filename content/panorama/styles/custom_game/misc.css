@@ -27,15 +27,3 @@
 .Invisible {
     visibility: collapse;
 }
-
-TextEntry {
-    border: 1px solid rgb(5, 175, 197);
-    padding: 10px;
-    background-color: gradient(
-        linear,
-        0% 0%,
-        0% 100%,
-        from(#1c5874),
-        to(#154358)
-    );
-}

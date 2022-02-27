@@ -2,6 +2,7 @@
     <styles>
         <include src="file://{resources}/styles/custom_game/crayfish.css" />
         <include src="file://{resources}/styles/custom_game/misc.css" />
+        <include src="s2r://panorama/styles/dotastyles.vcss_c"/>
     </styles>
     <scripts>
         <include src="file://{resources}/scripts/custom_game/crayfish.js" />
@@ -36,11 +37,38 @@
                     <Panel id="CrayfishDice"/>
                 </Panel>
             </Panel>
+            <Panel id="CrayfishRollChecker">
+                <Label id="CrayfishRollCheckerStatus" text="All Good!" />
+            </Panel>
 
             <Panel id="CrayfishPotsSelection">
-                <TextEntry id="PotsShallow" class="PanelClass" maxchars="4" oninputsubmit="OnSubmitted()" />
-                <TextEntry id="PotsDeep" class="PanelClass" maxchars="4" oninputsubmit="OnSubmitted()" />
+                <Panel id="ShallowPotsContainer">
+                    <Label id="ShallowPotsLabel" text="Pots (Shallow)" />
+                    <TextEntry id="ShallowPots" maxchars="10" placeholder="0" oninputsubmit="OnCrayfishPotsPlaced('ShallowPots')" onblur="OnCrayfishPotsPlaced('ShallowPots')" onfocus="OnCrayfishPotsPlaced('ShallowPots')" />
+                </Panel>
+                <Panel id="DeepPotsContainer">
+                    <Label id="DeepPotsLabel" text="Pots (Deep)" />
+                    <TextEntry id="DeepPots" maxchars="10" placeholder="0" oninputsubmit="OnCrayfishPotsPlaced('DeepPots')" onblur="OnCrayfishPotsPlaced('DeepPots')" onfocus="OnCrayfishPotsPlaced('DeepPots')" />
+                </Panel>
+
+
+                <!-- <DOTASettingsSlider id="ShallowPots" style="margin-bottom:0;" displayprecision="0" min="1" max="2" text="Shallow Pots" />
+                <DOTASettingsSlider id="DeepPots" style="margin-bottom:0;" displayprecision="0" min="1" max="2" text="Deep Pots" /> -->
             </Panel>
+
+            <Panel id="CrayfishResources">
+                <Panel id="CrayfishResourceTracker" class="PanelClass">
+                    <Label id="CrayfishResourcesMoney" text="Money: $" />
+                    <Label id="CrayfishResourcesPots" text="Pots:" />
+                </Panel>
+                <Button class="ButtonClass" onactivate="RollDice()">
+                    <Label text="Buy more pots ($50)" />
+                </Button>
+            </Panel>
+        </Panel>
+
+        <Panel id="CrayfishHistory">
+            
         </Panel>
 
     </Panel>

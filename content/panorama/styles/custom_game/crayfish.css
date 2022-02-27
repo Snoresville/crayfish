@@ -86,4 +86,57 @@
 
 #CrayfishPotsSelection {
     margin-top: 30px;
+    width: 250px;
+    height: fit-children;
+
+    flow-children: down;
+}
+
+#CrayfishPotsSelection Panel {
+    height: 100px;
+}
+
+#CrayfishResources {
+    width: fit-children;
+    height: fit-children;
+
+    border-top: 1px solid rgb(5, 175, 197);
+}
+#CrayfishResourceTracker {
+    height: fit-children;
+}
+
+#CrayfishRollChecker {
+    margin-top: 20px;
+
+    height: 50px;
+    width: 250px;
+    background-color: gradient(
+        linear,
+        0% 0%,
+        0% 100%,
+        from(#1c7436),
+        to(#15582f)
+    );
+}
+
+#CrayfishRollChecker.Bad {
+    background-color: gradient(
+        linear,
+        0% 0%,
+        0% 100%,
+        from(#741c1c),
+        to(#581515)
+    );
+}
+
+#CrayfishRollCheckerStatus {
+    vertical-align: middle;
+}
+
+#CrayfishHistory {
+    horizontal-align: right;
+    width: 400px;
+
+    overflow: scroll;
 }
