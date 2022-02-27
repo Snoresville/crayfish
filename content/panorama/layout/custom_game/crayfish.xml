@@ -1,0 +1,12 @@
+<root>
+    <styles>
+        <include src="file://{resources}/styles/custom_game/crayfish.css" />
+    </styles>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/crayfish.js" />
+    </scripts>
+    
+    <Panel class="CrayfishMain">
+        
+    </Panel>
+</root>

@@ -1,0 +1,9 @@
+<root>
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/default.js" />
+    </scripts>
+    
+    <Panel>
+        <CustomUIElement type="Hud"			layoutfile="file://{resources}/layout/custom_game/crayfish.xml"/>
+    </Panel>
+</root>
