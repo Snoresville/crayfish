@@ -61,14 +61,14 @@
                     <Label id="CrayfishResourcesMoney" text="Money: $" />
                     <Label id="CrayfishResourcesPots" text="Pots:" />
                 </Panel>
-                <Button class="ButtonClass" onactivate="RollDice()">
+                <Button class="ButtonClass" onactivate="PurchasePot()">
                     <Label text="Buy more pots ($50)" />
                 </Button>
             </Panel>
         </Panel>
 
         <Panel id="CrayfishHistory">
-            
+
         </Panel>
 
     </Panel>

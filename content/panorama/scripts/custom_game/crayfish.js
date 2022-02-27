@@ -1,6 +1,7 @@
-// Game Settings
+// Game Constants
 const maxPots = 50;
 const crayfishPrice = 10;
+const potPrice = 50;
 const crayfishGains = [
     [1, 2],
     [2, 5],
@@ -65,8 +66,8 @@ function UpdateRollStatus() {
 }
 
 function FullUpdate() {
-    UpdateRollStatus();
     UpdateResourceCounts();
+    UpdateRollStatus();
 }
 
 // Mechanics
@@ -129,16 +130,12 @@ function RollResult(value) {
     );
 }
 
-function OnPotsPlaced(location) {
-    const locationPanel = $(`#${location}`);
+function PurchasePot() {
+    if (money < potPrice) return;
 
-    $.Msg(locationPanel);
-
-    if (isNaN(parseInt(locationPanel.text))) {
-        locationPanel.text = 0;
-    } else {
-        locationPanel.text = parseInt(locationPanel.val);
-    }
+    pots++;
+    money -= potPrice;
+    UpdateResourceCounts();
 }
 
 // Misc
@@ -161,5 +158,4 @@ function WriteHistoryLine(newString) {
 }
 
 // Start Updating
-UpdateResourceCounts();
-UpdateRollStatus();
+FullUpdate();
