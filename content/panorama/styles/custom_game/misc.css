@@ -1,0 +1,41 @@
+.ButtonClass {
+    padding: 30px;
+    background-color: gradient(
+        linear,
+        0% 0%,
+        0% 100%,
+        from(#1c5874),
+        to(#154358)
+    );
+    border: 1px solid rgb(5, 175, 197);
+}
+
+.ButtonClass:hover {
+    background-color: rgb(6, 88, 211);
+}
+
+.ButtonClass:active {
+    background-color: rgb(19, 61, 80);
+}
+
+.ButtonClass Label {
+    color: white;
+    horizontal-align: middle;
+    font-size: 30px;
+}
+
+.Invisible {
+    visibility: collapse;
+}
+
+TextEntry {
+    border: 1px solid rgb(5, 175, 197);
+    padding: 10px;
+    background-color: gradient(
+        linear,
+        0% 0%,
+        0% 100%,
+        from(#1c5874),
+        to(#154358)
+    );
+}

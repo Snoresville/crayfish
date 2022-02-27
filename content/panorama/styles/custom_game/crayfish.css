@@ -1,0 +1,89 @@
+.CrayfishMain {
+    background-color: #227cd6;
+}
+.CrayfishMain Panel {
+    height: 100%;
+    width: 100%;
+    flow-children: down;
+}
+
+.CrayfishMain Panel Label {
+    horizontal-align: middle;
+    color: white;
+}
+
+#CrayfishMenu Button {
+    horizontal-align: middle;
+    margin-bottom: 10px;
+}
+
+#CrayfishTitle {
+    margin-top: 15%;
+    margin-bottom: 100px;
+    font-size: 75px;
+}
+
+#CrayfishCredits {
+    padding-top: 150px;
+}
+
+#CrayfishCredits Label {
+    font-size: 30px;
+}
+
+#CrayfishCredits Button {
+    margin-top: 200px;
+    horizontal-align: middle;
+}
+
+#CrayfishGame {
+    padding: 30px;
+}
+
+#CrayfishRollPanel {
+    height: 100px;
+    flow-children: right;
+}
+#CrayfishRollPanel Button {
+    height: 100px;
+}
+#CrayfishDiceContainer {
+    width: 100px;
+    height: 100px;
+}
+
+#CrayfishDice {
+    width: 64px;
+    height: 64px;
+    horizontal-align: middle;
+    vertical-align: middle;
+}
+
+#CrayfishDice.Roll1 {
+    background-image: url("file://panorama/images/dice1.png");
+    background-size: 100% 100%;
+}
+#CrayfishDice.Roll2 {
+    background-image: url("file://panorama/images/dice2.png");
+    background-size: 100% 100%;
+}
+#CrayfishDice.Roll3 {
+    background-image: url("file://panorama/images/dice3.png");
+    background-size: 100% 100%;
+}
+#CrayfishDice.Roll4 {
+    background-image: url("file://panorama/images/dice4.png");
+    background-size: 100% 100%;
+}
+#CrayfishDice.Roll5 {
+    background-image: url("file://panorama/images/dice5.png");
+    background-size: 100% 100%;
+}
+#CrayfishDice.Roll6 {
+    background-image: url("file://panorama/images/dice6.png");
+    background-size: 100% 100%;
+}
+
+#CrayfishPotsSelection {
+    margin-top: 30px;
+}
